@@ -9,13 +9,37 @@ import SwiftUI
 
 struct Dashboard: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        ZStack {
+            BackGround()
+            VStack {
+                Text("Welcome User")
+                    .font(.largeTitle)
+                    .fontWeight(.bold)
+                Image(systemName: "person.circle")
+                    .resizable()
+                    .frame(width: 100, height: 100)
+                    .padding()
+                Button {
+                    
+                } label: {
+                    ButtonStyle1(title: "Display limit: 25")
+                }
+                .padding()
+                Button {
+                    
+                } label: {
+                    ButtonStyle1(title: "Display limit: 50")
+                }
+                .padding()
+                Button {
+                    
+                } label: {
+                    ButtonStyle1(title: "Display limit: 100")
+                }
+                .padding()
+            }
+            .foregroundColor(.white)
         }
-        .padding()
     }
 }
 

@@ -16,31 +16,35 @@ struct DisplayGridVC: View {
     var body: some View {
         ZStack {
             BackGround()
-            VStack {
-                HStack {
-                    Button {
-                        backToDashboard.toggle()
-                    } label: {
-                        Image(systemName: "arrow.backward")
-                            .resizable()
-                            .frame(width: 40, height: 35)
-                    }
-                    .padding()
-                    Text("Media Coverages")
-                        .font(.title)
-                        .fontWeight(.bold)
-                    Spacer()
-                }
-                .foregroundColor(.white)
-                ScrollView {
-                    LazyVGrid(columns: viewModel.columns) {
-                        ForEach(viewModel.ListData) { bookInfo in
-                            BookCell(bookInfo: bookInfo)
-                                .frame(height: screenHeight * 0.3)
+            if viewModel.isLoading {
+                loadingView()
+            } else {
+                VStack {
+                    HStack {
+                        Button {
+                            backToDashboard.toggle()
+                        } label: {
+                            Image(systemName: "arrow.backward")
+                                .resizable()
+                                .frame(width: 40, height: 35)
                         }
+                        .padding()
+                        Text("Media Coverages")
+                            .font(.title)
+                            .fontWeight(.bold)
+                        Spacer()
                     }
-                    .padding(.leading, 10)
-                    .padding(.trailing, 10)
+                    .foregroundColor(.white)
+                    ScrollView {
+                        LazyVGrid(columns: viewModel.columns) {
+                            ForEach(viewModel.ListData) { bookInfo in
+                                BookCell(bookInfo: bookInfo)
+                                    .frame(height: screenHeight * 0.3)
+                            }
+                        }
+                        .padding(.leading, 10)
+                        .padding(.trailing, 10)
+                    }
                 }
             }
         }

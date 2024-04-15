@@ -27,7 +27,7 @@ import SwiftUI
         GetMediaAPI().GetMediaByPage(param: ["limit": limit]) {
             [weak self] responce, error in
             guard let weakSelf = self else { return }
-            weakSelf.isLoading = true
+            weakSelf.isLoading = false
             guard error == nil else {
                 print("From main class Error",error?.message ?? "")
                 weakSelf.alertItem = AlertContext.invalidError

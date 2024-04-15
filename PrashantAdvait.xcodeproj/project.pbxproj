@@ -31,6 +31,7 @@
 		8DDFFAE72BCD97090065BD96 /* GetMediaAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDFFAE62BCD97090065BD96 /* GetMediaAPI.swift */; };
 		8DDFFAE92BCD9A110065BD96 /* Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDFFAE82BCD9A110065BD96 /* Alerts.swift */; };
 		8DDFFAEB2BCDA1700065BD96 /* CellBG.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDFFAEA2BCDA1700065BD96 /* CellBG.swift */; };
+		8DDFFAED2BCDA4AB0065BD96 /* loadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDFFAEC2BCDA4AB0065BD96 /* loadingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +60,7 @@
 		8DDFFAE62BCD97090065BD96 /* GetMediaAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetMediaAPI.swift; sourceTree = "<group>"; };
 		8DDFFAE82BCD9A110065BD96 /* Alerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alerts.swift; sourceTree = "<group>"; };
 		8DDFFAEA2BCDA1700065BD96 /* CellBG.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellBG.swift; sourceTree = "<group>"; };
+		8DDFFAEC2BCDA4AB0065BD96 /* loadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loadingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +167,7 @@
 			children = (
 				8DDFFAD02BCD51740065BD96 /* ImageLoader.swift */,
 				8DDFFAE82BCD9A110065BD96 /* Alerts.swift */,
+				8DDFFAEC2BCDA4AB0065BD96 /* loadingView.swift */,
 			);
 			path = UiKitComponents;
 			sourceTree = "<group>";
@@ -286,6 +289,7 @@
 				8DDFFAC32BCD40370065BD96 /* BackGround.swift in Sources */,
 				8DDFFAD12BCD51740065BD96 /* ImageLoader.swift in Sources */,
 				8DDFFAEB2BCDA1700065BD96 /* CellBG.swift in Sources */,
+				8DDFFAED2BCDA4AB0065BD96 /* loadingView.swift in Sources */,
 				8DDFFABE2BCD3A090065BD96 /* MediaCoverage.swift in Sources */,
 				8DDFFAAB2BCD36A40065BD96 /* PrashantAdvaitApp.swift in Sources */,
 				8DDFFAE72BCD97090065BD96 /* GetMediaAPI.swift in Sources */,

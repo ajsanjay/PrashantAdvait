@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-final class DisplayGridViewModel: ObservableObject {
+@MainActor final class DisplayGridViewModel: ObservableObject {
     /*In case we need to perform an action once selecting a cell from grid view this code will help to achive it*/
 //    var selectedObject: MediaCoverage? {
 //        didSet { isShowingDetail = true }
@@ -17,7 +17,27 @@ final class DisplayGridViewModel: ObservableObject {
     /*In case if we need to navigate a detail page from here this code will help to handle it*/
 //    @Published var isShowingDetail = false
     
-    @Published var isLodaing = true
-    @Published var ListData = MockData.Datas
+    @Published var alertItem: AlertItem?
+    @Published var isLoading: Bool = false
+    @Published var ListData: [MediaCoverage] = []
+    
+    //limit
+    func GetMediaCoverages(limit: Int) {
+        isLoading = true
+        GetMediaAPI().GetMediaByPage(param: ["limit": limit]) {
+            [weak self] responce, error in
+            guard let weakSelf = self else { return }
+            weakSelf.isLoading = true
+            guard error == nil else {
+                print("From main class Error",error?.message ?? "")
+                weakSelf.alertItem = AlertContext.invalidError
+                return
+            }
+            guard let listValues = responce else { return }
+            DispatchQueue.main.async {
+                weakSelf.ListData = listValues
+            }
+        }
+    }
     
 }

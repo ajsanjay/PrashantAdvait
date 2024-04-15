@@ -1,5 +1,5 @@
 //
-//  GridModel.swift
+//  MediaCoverage.swift
 //  PrashantAdvait
 //
 //  Created by Jaya Sabeen on 15/04/24.

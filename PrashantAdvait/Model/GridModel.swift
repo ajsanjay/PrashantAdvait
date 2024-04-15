@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct MediaCoverage: Codable {
+struct MediaCoverage: Codable, Identifiable {
     let id: String
     let title: String
     let language: String

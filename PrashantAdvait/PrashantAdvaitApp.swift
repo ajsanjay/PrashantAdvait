@@ -11,7 +11,7 @@ import SwiftUI
 struct PrashantAdvaitApp: App {
     var body: some Scene {
         WindowGroup {
-            Dashboard()
+            Dashboard(isDisplayingDetail: false)
         }
     }
 }

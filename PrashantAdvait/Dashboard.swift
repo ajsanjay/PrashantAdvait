@@ -8,41 +8,46 @@
 import SwiftUI
 
 struct Dashboard: View {
+    
+    @State var isDisplayingDetail: Bool
+    
     var body: some View {
-        ZStack {
-            BackGround()
-            VStack {
-                Text("Welcome User")
-                    .font(.largeTitle)
-                    .fontWeight(.bold)
-                Image(systemName: "person.circle")
-                    .resizable()
-                    .frame(width: 100, height: 100)
+        NavigationView {
+            ZStack {
+                BackGround()
+                VStack {
+                    Text("Welcome User")
+                        .font(.largeTitle)
+                        .fontWeight(.bold)
+                    Image(systemName: "person.circle")
+                        .resizable()
+                        .frame(width: 100, height: 100)
+                        .padding()
+                    Button {
+                        
+                    } label: {
+                        ButtonStyle1(title: "Display limit: 25")
+                    }
                     .padding()
-                Button {
-                    
-                } label: {
-                    ButtonStyle1(title: "Display limit: 25")
+                    Button {
+                        
+                    } label: {
+                        ButtonStyle1(title: "Display limit: 50")
+                    }
+                    .padding()
+                    Button {
+                        
+                    } label: {
+                        ButtonStyle1(title: "Display limit: 100")
+                    }
+                    .padding()
                 }
-                .padding()
-                Button {
-                    
-                } label: {
-                    ButtonStyle1(title: "Display limit: 50")
-                }
-                .padding()
-                Button {
-                    
-                } label: {
-                    ButtonStyle1(title: "Display limit: 100")
-                }
-                .padding()
+                .foregroundColor(.white)
             }
-            .foregroundColor(.white)
         }
     }
 }
 
 #Preview {
-    Dashboard()
+    Dashboard(isDisplayingDetail: false)
 }

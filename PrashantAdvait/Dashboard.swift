@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  Dashboard.swift
 //  PrashantAdvait
 //
 //  Created by Jaya Sabeen on 15/04/24.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct Dashboard: View {
     var body: some View {
         VStack {
             Image(systemName: "globe")
@@ -20,5 +20,5 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView()
+    Dashboard()
 }

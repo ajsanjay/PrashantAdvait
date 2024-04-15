@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8DDFFAAB2BCD36A40065BD96 /* PrashantAdvaitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDFFAAA2BCD36A40065BD96 /* PrashantAdvaitApp.swift */; };
-		8DDFFAAD2BCD36A40065BD96 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDFFAAC2BCD36A40065BD96 /* ContentView.swift */; };
+		8DDFFAAD2BCD36A40065BD96 /* Dashboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDFFAAC2BCD36A40065BD96 /* Dashboard.swift */; };
 		8DDFFAAF2BCD36A60065BD96 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DDFFAAE2BCD36A60065BD96 /* Assets.xcassets */; };
 		8DDFFAB22BCD36A60065BD96 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DDFFAB12BCD36A60065BD96 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -16,7 +16,7 @@
 /* Begin PBXFileReference section */
 		8DDFFAA72BCD36A40065BD96 /* PrashantAdvait.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PrashantAdvait.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DDFFAAA2BCD36A40065BD96 /* PrashantAdvaitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrashantAdvaitApp.swift; sourceTree = "<group>"; };
-		8DDFFAAC2BCD36A40065BD96 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		8DDFFAAC2BCD36A40065BD96 /* Dashboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dashboard.swift; sourceTree = "<group>"; };
 		8DDFFAAE2BCD36A60065BD96 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8DDFFAB12BCD36A60065BD96 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -52,7 +52,7 @@
 			isa = PBXGroup;
 			children = (
 				8DDFFAAA2BCD36A40065BD96 /* PrashantAdvaitApp.swift */,
-				8DDFFAAC2BCD36A40065BD96 /* ContentView.swift */,
+				8DDFFAAC2BCD36A40065BD96 /* Dashboard.swift */,
 				8DDFFAAE2BCD36A60065BD96 /* Assets.xcassets */,
 				8DDFFAB02BCD36A60065BD96 /* Preview Content */,
 			);
@@ -137,7 +137,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8DDFFAAD2BCD36A40065BD96 /* ContentView.swift in Sources */,
+				8DDFFAAD2BCD36A40065BD96 /* Dashboard.swift in Sources */,
 				8DDFFAAB2BCD36A40065BD96 /* PrashantAdvaitApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -11,6 +11,8 @@
 		8DDFFAAD2BCD36A40065BD96 /* Dashboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDFFAAC2BCD36A40065BD96 /* Dashboard.swift */; };
 		8DDFFAAF2BCD36A60065BD96 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DDFFAAE2BCD36A60065BD96 /* Assets.xcassets */; };
 		8DDFFAB22BCD36A60065BD96 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DDFFAB12BCD36A60065BD96 /* Preview Assets.xcassets */; };
+		8DDFFABC2BCD39C50065BD96 /* GridOfImagesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDFFABB2BCD39C50065BD96 /* GridOfImagesVC.swift */; };
+		8DDFFABE2BCD3A090065BD96 /* GridModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDFFABD2BCD3A090065BD96 /* GridModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		8DDFFAAC2BCD36A40065BD96 /* Dashboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dashboard.swift; sourceTree = "<group>"; };
 		8DDFFAAE2BCD36A60065BD96 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8DDFFAB12BCD36A60065BD96 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8DDFFABB2BCD39C50065BD96 /* GridOfImagesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridOfImagesVC.swift; sourceTree = "<group>"; };
+		8DDFFABD2BCD3A090065BD96 /* GridModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +55,11 @@
 		8DDFFAA92BCD36A40065BD96 /* PrashantAdvait */ = {
 			isa = PBXGroup;
 			children = (
+				8DDFFAB92BCD394F0065BD96 /* Model */,
+				8DDFFAB82BCD39450065BD96 /* MockData */,
 				8DDFFAAA2BCD36A40065BD96 /* PrashantAdvaitApp.swift */,
 				8DDFFAAC2BCD36A40065BD96 /* Dashboard.swift */,
+				8DDFFABA2BCD39610065BD96 /* ViewControllers */,
 				8DDFFAAE2BCD36A60065BD96 /* Assets.xcassets */,
 				8DDFFAB02BCD36A60065BD96 /* Preview Content */,
 			);
@@ -65,6 +72,29 @@
 				8DDFFAB12BCD36A60065BD96 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8DDFFAB82BCD39450065BD96 /* MockData */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MockData;
+			sourceTree = "<group>";
+		};
+		8DDFFAB92BCD394F0065BD96 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8DDFFABD2BCD3A090065BD96 /* GridModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8DDFFABA2BCD39610065BD96 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				8DDFFABB2BCD39C50065BD96 /* GridOfImagesVC.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +168,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				8DDFFAAD2BCD36A40065BD96 /* Dashboard.swift in Sources */,
+				8DDFFABE2BCD3A090065BD96 /* GridModel.swift in Sources */,
 				8DDFFAAB2BCD36A40065BD96 /* PrashantAdvaitApp.swift in Sources */,
+				8DDFFABC2BCD39C50065BD96 /* GridOfImagesVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
